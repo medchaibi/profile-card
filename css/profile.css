@@ -1,0 +1,89 @@
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+body{
+    background-color: var(--Dark-cyan);
+    background-image: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 900px bottom 400PX, left 550PX top 350PX;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.countiner{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: hsl(229deg 23% 23% / 25%) -1px 2px 20px 20px
+}
+.card{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upper img{
+    width: 450px;
+    border-radius: 15px 15px 0 0 ;
+}
+.down{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap :10px;
+    width: 100%;
+}
+.down img {
+    position: relative;
+    bottom: 80px;
+    border-radius: 50%;
+    border: 8px solid white ;
+}
+.down .avtar{
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+b {
+    color: var(--Dark-gray);
+}
+hr{
+    width: 100%;
+    color: var(--Dark-gray);
+}
+.city{
+    margin-top: 15px;
+    text-align: center;
+    color: var(--Dark-gray);
+}
+.infos{
+    margin-top: 25px 25px ;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--Very-dark-desaturated-blue);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    color: var(--Dark-gray);
+}
